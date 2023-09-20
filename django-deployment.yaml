@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linux-app
+  labels:
+    app: linux
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: linux
+  template:
+    metadata:
+      labels:
+        app: linux
+    spec:
+      containers:
+        - image: rocafer/linux:latest
+          env:
+            - name: OPENAI_API_KEY
+              value: "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"
+            - name: SECRET_KEY
+              value: "django-insecure-0t30fq0!^47k=@w!%rrqfy*0qfh$d+7_6+ts^!ivo4=0=$#gn+"
+          name: linux
+          ports:
+            - containerPort: 8000
+              name: gunicorn
+          volumeMounts:
+            - name: sqlite-data
+              mountPath: /path/to/sqlite-data
+      volumes:
+        - name: sqlite-data
+          emptyDir: {}
+
+# Resto de tu archivo

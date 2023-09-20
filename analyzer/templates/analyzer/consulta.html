@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Registros</title>
+</head>
+<body>
+    <h1>Consulta de Registros</h1>
+
+    <!-- Agrega el mensaje "Abriendo HTML!" -->
+    <p>Abriendo HTML!</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label for="registros">Registros:</label>
+        <select id="registros" name="registros" size="10">
+            {% for registro_id, registro_data in registros.items %}
+            <option value="{{ registro_id }}">{{ registro_data.agrupacion }} - {{ registro_data.clasificacion }} - {{ registro_data.fecha }} - {{ registro_data.hora }} - {{ registro_data.registro }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="submit" value="Cargar">
+    </form>
+
+    <!-- Agregar el botón "Seleccionar" -->
+    <form method="POST" action="{% url 'seleccionar_registro' %}">
+        {% csrf_token %}
+        <input type="hidden" id="registro_id" name="registro_id" value="">
+        <input type="submit" value="Seleccionar">
+    </form>
+
+    <script>
+        // Script para capturar el ID del registro seleccionado y enviarlo al formulario oculto antes de enviar el formulario
+        const selectElement = document.getElementById('registros');
+        const hiddenInput = document.getElementById('registro_id');
+        selectElement.addEventListener('change', function() {
+            const selectedId = this.value;
+            hiddenInput.value = selectedId;
+        });
+    </script>
+</body>
+</html>

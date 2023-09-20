@@ -1,0 +1,75 @@
+<!-- un_registro.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle del Registro</title>
+</head>
+<body>
+    <h1>Contenido del Registro</h1>
+
+    <textarea rows="10" cols="80" readonly>{{ message }}</textarea>
+
+    <button id="chat-gpt-button">Chat-GPT</button>
+    <button id="cargar-button">Cargar</button>
+
+    <br>
+
+    <h2>Respuesta de Chat-GPT</h2>
+    <textarea id="gpt-response" rows="10" cols="80" readonly></textarea>
+
+    <script>
+        const chatGptButton = document.getElementById("chat-gpt-button");
+        const cargarButton = document.getElementById("cargar-button");
+        const messageTextarea = document.querySelector("textarea");
+        const gptResponseTextarea = document.getElementById("gpt-response");
+
+        chatGptButton.addEventListener("click", async () => {
+            const message = messageTextarea.value;
+            if (message.trim().length === 0) {
+                alert("Por favor ingrese un mensaje antes de usar Chat-GPT.");
+                return;
+            }
+
+            try {
+                const response = await fetch("/chat_gpt/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ message }),
+                });
+
+                if (!response.ok) {
+                    throw new Error("Error al obtener la respuesta de Chat-GPT.");
+                }
+
+                const data = await response.json();
+                const answer = data.answer;
+                gptResponseTextarea.value = answer;
+            } catch (error) {
+                alert("Error al obtener la respuesta de Chat-GPT.");
+            }
+        }); // Cierre de la llave correspondiente al evento click para el botón "Chat-GPT"
+
+        cargarButton.addEventListener("click", async () => {
+        try {
+            const response = await fetch("/get_selected_registro/");
+            if (!response.ok) {
+                throw new Error("Error al cargar el archivo.");
+            }
+
+            const data = await response.text();
+            messageTextarea.value = data;
+        } catch (error) {
+            alert("Error al cargar el archivo.");
+        }
+    });
+
+
+
+
+
+    </script>
+</body>
+</html>

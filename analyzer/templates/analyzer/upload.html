@@ -1,0 +1,15 @@
+<!-- templates/analyzer/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subir Archivo de Registro</title>
+</head>
+<body>
+    <h1>Subir Archivo de Registro</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

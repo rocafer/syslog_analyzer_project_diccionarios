@@ -1,0 +1,265 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 7892782
+"POST /seleccionar_registro/ HTTP/1.1" 200 731
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 3391562
+"POST /seleccionar_registro/ HTTP/1.1" 200 2325
+Internal Server Error: /seleccionar_registro/
+Traceback (most recent call last):
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/r/syslog_analyzer_project/analyzer/views.py", line 115, in seleccionar_registro
+    response = openai.ChatCompletion.create(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 763, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-JPQkj***************************************fX7r. You can find your API key at https://platform.openai.com/account/api-keys.
+"POST /seleccionar_registro/ HTTP/1.1" 500 98578
+Internal Server Error: /seleccionar_registro/
+Traceback (most recent call last):
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/r/syslog_analyzer_project/analyzer/views.py", line 115, in seleccionar_registro
+    response = openai.ChatCompletion.create(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 763, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-JPQkj***************************************fX7r. You can find your API key at https://platform.openai.com/account/api-keys.
+"POST /seleccionar_registro/ HTTP/1.1" 500 97875
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3393364
+Internal Server Error: /seleccionar_registro/
+Traceback (most recent call last):
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/r/syslog_analyzer_project/analyzer/views.py", line 115, in seleccionar_registro
+    response = openai.ChatCompletion.create(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 763, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-JPQkj***************************************fX7r. You can find your API key at https://platform.openai.com/account/api-keys.
+"POST /seleccionar_registro/ HTTP/1.1" 500 97905
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3396113
+Internal Server Error: /seleccionar_registro/
+Traceback (most recent call last):
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/r/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/r/syslog_analyzer_project/analyzer/views.py", line 115, in seleccionar_registro
+    response = openai.ChatCompletion.create(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/home/r/.local/lib/python3.10/site-packages/openai/api_requestor.py", line 763, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-JPQkj***************************************fX7r. You can find your API key at https://platform.openai.com/account/api-keys.
+"POST /seleccionar_registro/ HTTP/1.1" 500 97875
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3405673
+Not Found: /favicon.ico
+"POST /seleccionar_registro/ HTTP/1.1" 200 2246
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 1002072
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 1003174
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 6056439
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 6972718
+"POST /seleccionar_registro/ HTTP/1.1" 200 2451
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /consulta/ HTTP/1.1" 200 1399
+"POST / HTTP/1.1" 200 468054
+"POST /seleccionar_registro/ HTTP/1.1" 302 0
+"GET /consulta/ HTTP/1.1" 200 1399
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 955643
+"POST /seleccionar_registro/ HTTP/1.1" 302 0
+"GET /consulta/ HTTP/1.1" 200 1399
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3547
+"POST / HTTP/1.1" 200 510010
+"POST /seleccionar_registro/ HTTP/1.1" 200 1992
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 511857
+"POST /seleccionar_registro/ HTTP/1.1" 200 2540
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/r/syslog_analyzer_project/analyzer/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 513821
+"POST /seleccionar_registro/ HTTP/1.1" 200 1013
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"POST / HTTP/1.1" 200 520327
+"POST /seleccionar_registro/ HTTP/1.1" 200 2180
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 527720
+"POST /seleccionar_registro/ HTTP/1.1" 200 1832
+Watching for file changes with StatReloader
+/home/r/syslog_analyzer_project/syslog_analyzer_project/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"POST / HTTP/1.1" 200 535806
+"POST /seleccionar_registro/ HTTP/1.1" 200 1893
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 554885
+"POST /seleccionar_registro/ HTTP/1.1" 200 1580
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 562110
+"POST /seleccionar_registro/ HTTP/1.1" 200 1648
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 568324
+"POST /seleccionar_registro/ HTTP/1.1" 200 1220
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 575922
+"POST /seleccionar_registro/ HTTP/1.1" 200 1908
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 584909
+"POST /seleccionar_registro/ HTTP/1.1" 200 2379
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"POST / HTTP/1.1" 200 1577722
+"POST /seleccionar_registro/ HTTP/1.1" 200 2269
+"POST /seleccionar_registro/ HTTP/1.1" 302 0
+"GET /consulta/ HTTP/1.1" 200 1399
+"POST /seleccionar_registro/ HTTP/1.1" 302 0
+"GET /consulta/ HTTP/1.1" 200 1399
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 1585120
+"POST /seleccionar_registro/ HTTP/1.1" 200 978
+"POST /seleccionar_registro/ HTTP/1.1" 200 2171
+Not Found: /favicon.ico
+"POST /seleccionar_registro/ HTTP/1.1" 200 1769
+"POST /seleccionar_registro/ HTTP/1.1" 200 1712
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 2701904
+"POST /seleccionar_registro/ HTTP/1.1" 302 0
+"GET /consulta/ HTTP/1.1" 200 1399
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 5412531
+"POST /seleccionar_registro/ HTTP/1.1" 302 0
+"GET /consulta/ HTTP/1.1" 200 1399
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 8126444
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"POST / HTTP/1.1" 200 3727450
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"POST / HTTP/1.1" 200 3766680
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3894304
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3925502
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3945325
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 4015090
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 4062353
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+Not Found: /favicon.ico
+"POST / HTTP/1.1" 200 5159959
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 7127365
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 3987139
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 4094609
+/home/r/syslog_analyzer_project/analyzer/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 566
+"POST / HTTP/1.1" 200 4117416
