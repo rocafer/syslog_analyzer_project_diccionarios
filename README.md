@@ -1,0 +1,2 @@
+# syslog_analyzer_project_diccionarios
+syslog_analyzer_project_diccionarios
